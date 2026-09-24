@@ -1,0 +1,1 @@
+- [Workspace generation quirks](monorepo-frontend-backend-quirks.md) — Keep dom.iterable for generated browser clients and verify drizzle-zod insert schemas before omitting defaults.

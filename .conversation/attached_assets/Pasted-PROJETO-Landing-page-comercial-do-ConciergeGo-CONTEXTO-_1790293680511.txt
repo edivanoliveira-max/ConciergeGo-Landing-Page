@@ -1,0 +1,115 @@
+PROJETO: Landing page comercial do ConciergeGo
+
+CONTEXTO
+Site institucional de página única (one page, com âncoras de navegação), para vender o ConciergeGo — um concierge digital para hóspedes de pousadas e hotéis — para donos de hospedagem. Vai rodar no domínio raiz (ex: conciergego.com.br). O produto em si (o SaaS/app) já existe em outro projeto e roda num subdomínio (app.conciergego.com.br) — não recriar o produto aqui, só linkar pra ele nos pontos certos.
+
+Stack: React + Tailwind. Sem backend de produto, sem autenticação própria — a única funcionalidade de dados é salvar os envios do formulário de contato final.
+
+Antes de gerar qualquer seção, siga rigorosamente o documento de design system anexado a este projeto (cores, tipografia, espaçamento, componentes, tom de voz). Não crie paleta ou estilos próprios fora do que está documentado ali.
+
+SOBRE O PRODUTO
+ConciergeGo é um concierge digital para hóspedes de pousadas e hotéis, acessado via QR Code no quarto/acomodação, sem necessidade de baixar aplicativo (acesso direto pelo navegador do celular). Resolve dúvidas repetitivas na recepção, centraliza solicitações (toalha, limpeza, room service), organiza reservas de passeios, coleta avaliações direcionando hóspedes satisfeitos pro Google, e dá à hospedagem um painel de gestão em tempo real.
+
+ESTRUTURA DA PÁGINA
+
+1. Header fixo
+Logo "ConciergeGo" + menu (Como funciona / Recursos / Planos / Quem faz) + botão "Entrar" (link, estilo texto) + botão "Quero conhecer" (CTA primário)
+- "Entrar" leva para https://app.conciergego.com.br
+
+2. Hero
+- Tag pequena: "A hospitalidade que continua depois do check-in"
+- Título grande: "Menos perguntas repetidas. Mais tempo para cuidar." (destacar "Mais tempo para cuidar" na cor de destaque)
+- Subtítulo: concierge digital para hotéis e pousadas que transforma o QR Code do quarto em um canal simples, bonito e eficiente de atendimento — sem app para baixar
+- Dois CTAs: "Quero conhecer o ConciergeGo" (primário, leva para https://app.conciergego.com.br/cadastro) e "Ver como funciona" (secundário, scroll suave até a seção de recursos)
+- Selos de confiança abaixo dos botões: "Acesso pelo quarto" / "Sem download" / "14 dias grátis"
+- Mockup de celular à direita com tela de exemplo do hóspede (saudação "Olá, Marina", acesso rápido com ícones)
+
+3. Seção "Você reconhece esses problemas?"
+Intro: "Cuidar de uma hospedagem é estar disponível. Mas estar disponível não precisa significar repetir as mesmas respostas o dia inteiro."
+4 itens numerados (01–04), cada um com título curto e uma linha de descrição:
+01 A recepção virou um balcão de perguntas repetidas
+02 O hóspede vai embora sem descobrir o melhor da região
+03 Pedidos simples se perdem no meio da correria
+04 O WhatsApp pessoal não dá conta da operação
+
+4. Faixa de transição
+Frase de efeito: "O ConciergeGo coloca as respostas, os pedidos e as boas experiências no lugar certo: nas mãos do hóspede."
+
+5. Seção de recursos — "Pequenos gestos. Uma estadia mais memorável."
+Grid de 9 cards (ícone + título + descrição curta):
+- Boas-vindas com a sua cara
+- Pedidos em tempo real
+- Passeios que vendem
+- Cardápio e loja de conveniência
+- Extensão de estadia
+- Identidade visual personalizada
+- Avaliação integrada com Google
+- Ajuda quando importa (SOS)
+- Painel sem complicação
+- Fale com mais gente (multi-idioma)
+CTA de apoio abaixo: "Conversar sobre minha hospedagem" (leva pro WhatsApp)
+
+6. Seção "Simples para o hóspede. Organizado para você."
+3 passos numerados à esquerda (O hóspede aponta a câmera / Encontra tudo em poucos toques / A equipe recebe e resolve) + mockup do painel da recepção à direita (card "Visão da recepção" com pedidos em aberto, tempo médio de resposta, últimas solicitações)
+
+7. Barra de resultados (3 números grandes)
+"até 30%" — menos interrupções
+"+ reservas" — para experiências locais
+"mais 5★" — na lembrança da estadia
+
+8. Seção de Planos — "Uma escolha simples para uma operação mais leve"
+Sem taxa de instalação, sem fidelidade. 4 cards lado a lado (Premium com selo "Mais escolhido"):
+
+TRIAL — 14 dias grátis
+Sem cartão de crédito
+✓ Todos os recursos essenciais
+✓ Sem cartão de crédito
+✓ Configuração acompanhada
+CTA: "Começar teste grátis" → https://app.conciergego.com.br/cadastro
+
+START — R$ 97/mês
+Para começar leve, até 8 acomodações
+✓ Boas-vindas e informações
+✓ Solicitações e pedidos
+✓ Painel de gestão simples
+✓ Sem taxa de instalação
+CTA: "Quero o Start" → WhatsApp, mensagem pré-preenchida "Olá! Tenho interesse no plano Start do ConciergeGo"
+
+PREMIUM — R$ 197/mês (selo "Mais escolhido")
+Até 20 acomodações, experiência completa
+✓ Tudo do plano Start
+✓ Reserva de passeios
+✓ Multi-idioma (PT/EN/ES)
+✓ Cardápio digital
+✓ Sem taxa de instalação
+CTA: "Quero o Premium" → WhatsApp, mensagem "Olá! Tenho interesse no plano Premium do ConciergeGo"
+
+REDE PREMIUM — R$ 397/mês
+Para grupos com mais de uma hospedagem, até 3 propriedades inclusas + R$ 79/mês por propriedade adicional
+✓ Tudo do plano Premium, em cada propriedade
+✓ Visão consolidada da rede
+✓ Gestão centralizada
+✓ Sem taxa de instalação
+CTA: "Falar sobre a Rede Premium" → WhatsApp, mensagem "Olá! Tenho interesse no plano Rede Premium do ConciergeGo"
+
+Observação abaixo dos cards: "Cobrança mensal, sem fidelidade. Cancelamento a qualquer momento."
+
+9. Seção institucional — "Tecnologia com olhar de hospitalidade"
+Texto: "O ConciergeGo é desenvolvido pela Solus Design, uma empresa brasileira com 20 anos de experiência em tecnologia para turismo e hospedagem. Conhecemos a operação, respeitamos o seu tempo e construímos ferramentas para a experiência acontecer de verdade."
+Selo: "Solus Design — 20 anos criando para receber bem"
+
+10. Seção final de contato — "Comece grátis por 14 dias. Sem cartão de crédito."
+Texto de apoio: "Prefere conversar antes de criar sua conta? Deixe seu contato que a gente te chama."
+Formulário à direita (card claro): Seu nome / E-mail profissional / WhatsApp / Nome da hospedagem / botão "Quero começar a conversa"
+Ao enviar, salvar em uma entidade "Lead" (nome, email, whatsapp, nome_hospedagem, data_envio) — sem necessidade de autenticação para enviar
+Link auxiliar, como opção principal ali: "Falar no WhatsApp agora" (abre WhatsApp com número (88) 99993-2515, mensagem pré-preenchida "Olá! Quero saber mais sobre o ConciergeGo")
+
+11. Footer
+Logo + "Uma criação Solus Design — 20 anos de tecnologia para turismo" + telefone (88) 99993-2515 + solusdesign.com.br + botão flutuante "Falar no WhatsApp"
+
+COMPORTAMENTO E TÉCNICO
+- Totalmente responsivo (mobile first, boa parte do tráfego vem de anúncio/Instagram)
+- Menu com scroll suave até as âncoras
+- Botão flutuante de WhatsApp fixo, visível em todas as seções, número (88) 99993-2515
+- Sem cadastro de usuário, sem login na própria landing page — só os links externos descritos acima
+- Otimizar título e meta description da página pensando em SEO local (concierge digital para pousadas e hotéis)

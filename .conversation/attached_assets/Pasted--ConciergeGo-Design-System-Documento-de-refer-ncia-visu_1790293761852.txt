@@ -1,0 +1,109 @@
+# ConciergeGo — Design System
+
+Documento de referência visual para a landing page do ConciergeGo. Base: layout de referência (v1) com identidade em tons de verde, creme e coral, estilo editorial/premium para o setor de hospitalidade.
+
+---
+
+## 1. Princípios visuais
+
+- **Editorial, não corporativo genérico**: títulos grandes, respiro generoso, numeração estilo "01, 02, 03" em listas
+- **Acolhedor, mas profissional**: paleta terrosa/natural (verde, creme, coral), nada de azul corporativo ou gradientes neon
+- **Hierarquia clara por seção**: alternância de fundos (creme → verde-água → verde escuro → creme → quase-preto → verde escuro) cria ritmo de leitura e separa blocos de conteúdo sem precisar de bordas/divisores
+- **Poucos elementos decorativos**: ícones simples de linha (outline), sem ilustrações complexas; o mockup de celular/painel é o elemento visual central
+
+---
+
+## 2. Paleta de cores
+
+| Token | Hex aprox. | Uso |
+|---|---|---|
+| `--verde-escuro` | `#1F4D3F` | Header, hero, seções de destaque de produto, botões secundários |
+| `--verde-quase-preto` | `#14231D` | Seção institucional/credibilidade, footer |
+| `--creme` | `#F5F1E8` | Fundo padrão de seções neutras (textos, planos, passos) |
+| `--verde-agua-claro` | `#DCE8E1` | Faixas de transição entre seções, respiro visual |
+| `--coral` | `#E8A17E` | Cor de ação (CTA primário, destaques de texto, badges) |
+| `--branco` | `#FFFFFF` | Cards e elementos de UI dentro dos mockups |
+| `--texto-escuro` | `#1A1A1A` | Texto principal sobre fundo claro |
+| `--texto-claro` | `#F5F1E8` | Texto principal sobre fundo verde escuro/preto |
+| `--texto-secundario` | `#6B7568` (sobre claro) / `#A9BBAF` (sobre escuro) | Subtítulos, legendas, texto de apoio |
+
+Regra de contraste: nunca usar coral como fundo de bloco grande — é cor de destaque/ação, não de superfície.
+
+---
+
+## 3. Tipografia
+
+- **Família**: sans-serif geométrica, peso variável (ex: Inter, General Sans, Aeonik, ou similar — o Lovable deve escolher uma fonte gratuita do Google Fonts com essa personalidade: moderna, levemente arredondada, boa legibilidade em títulos grandes)
+- **Hierarquia**:
+  - H1 (hero): 48–64px, bold/extrabold, line-height apertado (1.05–1.1)
+  - H2 (título de seção): 32–40px, bold
+  - H3 (título de card/item): 18–20px, semibold
+  - Corpo: 16px, regular, line-height 1.5–1.6
+  - Legenda/label pequeno (tags acima dos títulos, tipo "A ROTINA COMO ELA É"): 12–13px, uppercase, letter-spacing aumentado, semibold
+- **Números de lista** ("01", "02"...): mesmo peso do H3, cor secundária, tamanho levemente menor que o título do item
+
+---
+
+## 4. Espaçamento e grid
+
+- Grid de 12 colunas, container máximo ~1200–1280px, margens laterais generosas (mín. 24px mobile, 80–120px desktop)
+- Espaçamento vertical entre seções: grande (96–140px desktop, 56–72px mobile) — é parte da identidade "respirada" do layout
+- Cards com padding interno generoso (24–32px), cantos arredondados médios (12–16px), sem sombras pesadas — preferir borda sutil ou fundo levemente diferenciado
+
+---
+
+## 5. Componentes
+
+**Botão primário (CTA)**
+- Fundo coral, texto escuro ou branco (o que tiver mais contraste), formato pill (border-radius total), ícone de seta → à direita
+- Estado hover: leve escurecimento do coral, sem efeitos chamativos
+
+**Botão secundário**
+- Fundo transparente ou branco, borda fina, texto na cor do fundo da seção (verde escuro sobre creme, branco sobre verde escuro)
+- Mesmo formato pill do primário
+
+**Botão flutuante WhatsApp**
+- Fixo, canto inferior direito (ou superior direito, como na referência), fundo escuro, ícone + texto "Falar no WhatsApp", pill, sombra leve pra destacar do fundo
+
+**Cards de plano**
+- Fundo branco/creme claro para planos padrão, fundo verde escuro para o plano em destaque ("Mais escolhido"), com badge coral no canto superior
+- Lista de recursos com ícone de check simples (outline, cor verde ou coral)
+
+**Cards de recurso (grid de benefícios)**
+- Ícone outline pequeno no topo (dentro de um círculo/quadrado sutil), título curto, descrição de 1–2 linhas, sem bordas — separação só por espaçamento/grid
+
+**Mockups (celular e painel)**
+- Sempre dentro de um "frame" simples (borda arredondada, sem excesso de detalhe realista tipo notch/câmera), conteúdo interno em cards brancos sobre fundo levemente colorido
+
+---
+
+## 6. Iconografia
+
+- Estilo outline/linha fina, consistente em peso de traço, sem ícones preenchidos (filled) misturados
+- Paleta de ícones: check, seta, WhatsApp, sino/notificação, escudo/SOS, idioma/globo, estrela (avaliação), QR code, mapa/passeio
+
+---
+
+## 7. Padrão de alternância de seções (ordem de fundo)
+
+1. Verde escuro (header + hero)
+2. Creme (problemas/dores)
+3. Verde-água claro (frase de transição)
+4. Verde escuro (grid de recursos)
+5. Creme (como funciona / passos)
+6. Creme (números de resultado)
+7. Creme (planos)
+8. Verde quase-preto (institucional/credibilidade)
+9. Verde escuro (CTA final + formulário)
+10. Verde quase-preto ou verde escuro (footer)
+
+Essa alternância é intencional — reforçar sempre creme→escuro→creme evita que a página fique monótona ou pesada demais (não usar verde escuro em duas seções seguidas sem uma faixa clara entre elas).
+
+---
+
+## 8. Tom de voz (copy)
+
+- Frases curtas, diretas, sem jargão técnico
+- Fala com o dono da hospedagem, não com o hóspede (exceto nos textos que aparecem dentro dos mockups)
+- Contraste de problema → solução em quase todo bloco de texto (o que dói hoje → o que o ConciergeGo resolve)
+- Números concretos sempre que possível ("até 30%", "14 dias", "R$ 97/mês") em vez de adjetivos vagos

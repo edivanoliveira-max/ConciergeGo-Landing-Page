@@ -1,6 +1,6 @@
-# [Project name]
+# ConciergeGo Landing Page
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+Landing page comercial do ConciergeGo para donos de pousadas e hotéis.
 
 ## Run & Operate
 
@@ -22,15 +22,21 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/conciergego-landing/src/App.tsx` — one-page marketing experience and lead form
+- `artifacts/conciergego-landing/src/index.css` — ConciergeGo visual system and responsive styles
+- `lib/api-spec/openapi.yaml` — source of truth for the lead submission contract
+- `lib/db/src/schema/leads.ts` — persisted contact lead model
+- `artifacts/api-server/src/routes/leads.ts` — lead submission endpoint
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- The landing page is a separate web artifact from the existing ConciergeGo SaaS and links to the external app for sign-in and signup.
+- The only server-side behavior is the public lead capture endpoint; no landing-page authentication is required.
+- The visual language follows the supplied ConciergeGo design system: green, cream, aqua, coral accents, and editorial hospitality pacing.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+The site explains ConciergeGo's value, capabilities, plans, and Solus Design background, then captures qualified hospitality leads or routes visitors to WhatsApp.
 
 ## User preferences
 
@@ -38,7 +44,8 @@ _Populate as you build — explicit user instructions worth remembering across s
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- API client requests use the shared `/api` proxy path; the landing page must remain at the root preview path.
+- External signup, login, plan, and WhatsApp URLs are intentionally kept outside the landing-page app.
 
 ## Pointers
 

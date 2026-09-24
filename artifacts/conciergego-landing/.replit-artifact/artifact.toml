@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "ConciergeGo Landing Page"
+description = "Landing page comercial do ConciergeGo, um concierge digital para hotéis e pousadas que simplifica o atendimento ao hóspede e organiza a operação."
+version = "1.0.0"
+id = "artifacts/conciergego-landing"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20383
+
+[services.development]
+run = "pnpm --filter @workspace/conciergego-landing run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/conciergego-landing", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/conciergego-landing/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20383"
+BASE_PATH = "/"
