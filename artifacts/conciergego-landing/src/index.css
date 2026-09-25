@@ -169,7 +169,7 @@
 .cg-section-green .cg-section-intro, .cg-section-dark .cg-section-intro { color: #a9bbaf; }
 
 .cg-problems-grid { display: grid; gap: 0; grid-template-columns: repeat(2, 1fr); margin-top: 4.5rem; }
-.cg-problem { border-top: 1px solid #ccd5ca; min-height: 180px; padding: 1.5rem 3rem 1.5rem 0; }
+.cg-problem { border-top: 1px solid #ccd5ca; min-height: 180px; padding: 2.25rem 3rem 2.25rem 0; }
 .cg-problem:nth-child(odd) { border-right: 1px solid #ccd5ca; }
 .cg-problem:nth-child(even) { padding-left: 3rem; }
 .cg-problem-num { color: #7b8e80; display: block; font-size: .83rem; font-weight: 700; letter-spacing: .08em; margin-bottom: 1.1rem; }
@@ -328,7 +328,7 @@
   .cg-phone-sticker { right: 1px; }
   .cg-section { padding: 76px 0; }
   .cg-problems-grid { display: block; margin-top: 3rem; }
-  .cg-problem, .cg-problem:nth-child(even) { border-right: 0; min-height: 0; padding: 1.35rem 0; }
+  .cg-problem, .cg-problem:nth-child(even) { border-right: 0; min-height: 0; padding: 2rem 0; }
   .cg-problem:first-child { border-top-color: #1f4d3f; }
   .cg-resource-layout, .cg-plans-head { align-items: flex-start; display: block; }
   .cg-resource-layout .cg-button { margin-top: 1.5rem; }
