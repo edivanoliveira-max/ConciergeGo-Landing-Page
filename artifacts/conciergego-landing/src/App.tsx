@@ -171,7 +171,7 @@ function Header() {
         </nav>
         <div className="cg-nav-actions">
           <a href={appUrl} className="cg-login" target="_blank" rel="noreferrer" data-testid="link-entrar">Entrar</a>
-          <a href={signupUrl} className="cg-button cg-button-primary" target="_blank" rel="noreferrer" data-testid="button-header-cta">
+          <a href="#contato" className="cg-button cg-button-primary" data-testid="button-header-cta">
             Quero conhecer <ArrowUpRight className="cg-arrow" size={16} />
           </a>
           <button className="cg-mobile-menu" type="button" aria-label={open ? 'Fechar menu' : 'Abrir menu'} onClick={() => setOpen(!open)} data-testid="button-mobile-menu">
@@ -201,7 +201,7 @@ function Hero() {
           </Reveal>
           <Reveal delay={3}>
             <div className="cg-hero-actions">
-              <a className="cg-button cg-button-primary" href={signupUrl} target="_blank" rel="noreferrer" data-testid="button-hero-primary">
+              <a className="cg-button cg-button-primary" href="#contato" data-testid="button-hero-primary">
                 Quero conhecer o ConciergeGo <ArrowRight className="cg-arrow" size={17} />
               </a>
               <a className="cg-button cg-button-ghost" href="#recursos" data-testid="button-hero-secondary">
