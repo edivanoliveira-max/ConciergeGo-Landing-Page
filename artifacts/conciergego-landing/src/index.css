@@ -112,8 +112,9 @@
 .cg-nav-links { align-items: center; display: flex; gap: 1.7rem; margin-left: auto; margin-right: 2rem; }
 .cg-nav-links a { color: rgba(245,241,232,.77); font-size: .8rem; transition: color .2s ease; }
 .cg-nav-links a:hover { color: #fff; }
-.cg-nav-actions { align-items: center; display: flex; gap: 1.7rem; }
-.cg-login { color: rgba(245,241,232,.68); font-size: .8rem; font-weight: 500; }
+.cg-nav-actions { align-items: center; border-left: 1px solid rgba(245,241,232,.22); display: flex; gap: 1rem; padding-left: 1.7rem; }
+.cg-login { align-items: center; border: 1px solid rgba(245,241,232,.42); border-radius: 999px; color: rgba(245,241,232,.9); display: inline-flex; font-size: .8rem; font-weight: 500; min-height: 40px; padding: .5rem .9rem; transition: border-color .2s ease, background-color .2s ease, color .2s ease; }
+.cg-login:hover { background: rgba(245,241,232,.08); border-color: rgba(245,241,232,.78); color: #fff; }
 .cg-mobile-menu { background: none; border: 0; color: #f5f1e8; display: none; padding: .35rem; }
 
 .cg-hero { background: #1f4d3f; color: #f5f1e8; min-height: 740px; padding: 160px 0 96px; position: relative; }
@@ -310,7 +311,7 @@
   .cg-logo { width: 122px; }
   .cg-nav-links, .cg-nav-actions .cg-login { display: none; }
   .cg-nav-links.is-open { background: #14231d; display: flex; flex-direction: column; gap: 1.2rem; left: 20px; margin: 0; padding: 1.2rem; position: absolute; right: 20px; top: 62px; }
-  .cg-nav-actions { margin-left: auto; }
+  .cg-nav-actions { border-left: 0; margin-left: auto; padding-left: 0; }
   .cg-nav-actions .cg-button { display: none; }
   .cg-mobile-menu { display: block; }
   .cg-hero { min-height: auto; padding: 125px 0 72px; }
