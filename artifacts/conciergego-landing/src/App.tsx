@@ -243,7 +243,7 @@ function Problems() {
         </Reveal>
         <div className="cg-problems-grid">
           {problems.map(([title, desc], index) => (
-            <Reveal key={title} delay={(index % 4) + 1}>
+            <Reveal key={title} className="cg-problem-reveal" delay={(index % 4) + 1}>
               <article className="cg-problem" data-testid={`card-problem-${index + 1}`}>
                 <span className="cg-problem-num">0{index + 1}</span>
                 <h3>{title}</h3>

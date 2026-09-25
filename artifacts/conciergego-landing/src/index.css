@@ -169,7 +169,8 @@
 .cg-section-green .cg-section-intro, .cg-section-dark .cg-section-intro { color: #a9bbaf; }
 
 .cg-problems-grid { border-left: 1px solid #ccd5ca; border-top: 1px solid #ccd5ca; display: grid; gap: 0; grid-template-columns: repeat(2, 1fr); margin-top: 4.5rem; }
-.cg-problem { border-bottom: 1px solid #ccd5ca; border-right: 1px solid #ccd5ca; min-height: 180px; padding: 2.25rem 3rem; }
+.cg-problem-reveal { display: flex; min-width: 0; }
+.cg-problem { border-bottom: 1px solid #ccd5ca; border-right: 1px solid #ccd5ca; flex: 1; min-height: 180px; padding: 2.25rem 3rem; }
 .cg-problem-num { color: #7b8e80; display: block; font-size: .83rem; font-weight: 700; letter-spacing: .08em; margin-bottom: 1.1rem; }
 .cg-problem h3 { font-size: 1.12rem; letter-spacing: -.025em; margin: 0 0 .45rem; }
 .cg-problem p { color: #6b7568; font-size: .9rem; line-height: 1.55; margin: 0; max-width: 340px; }
