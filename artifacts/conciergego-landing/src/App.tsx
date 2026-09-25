@@ -373,7 +373,7 @@ const plans = [
   { label: 'TRIAL', title: '14 dias grátis', price: '', desc: 'Sem cartão de crédito', features: ['Todos os recursos essenciais', 'Sem cartão de crédito', 'Configuração acompanhada'], cta: 'Começar teste grátis', href: signupUrl },
   { label: 'START', title: 'Plano Start', price: 'R$ 97', desc: 'Para começar leve, até 8 acomodações', features: ['Boas-vindas e informações', 'Solicitações e pedidos', 'Painel de gestão simples', 'Sem taxa de instalação'], cta: 'Quero o Start', href: whatsappUrl('Olá! Tenho interesse no plano Start do ConciergeGo') },
   { label: 'PREMIUM', title: 'Plano Premium', price: 'R$ 197', desc: 'Até 20 acomodações, experiência completa', features: ['Tudo do plano Start', 'Reserva de passeios', 'Multi-idioma (PT/EN/ES)', 'Cardápio digital', 'Sem taxa de instalação'], cta: 'Quero o Premium', href: whatsappUrl('Olá! Tenho interesse no plano Premium do ConciergeGo'), featured: true },
-  { label: 'REDE PREMIUM', title: 'Rede Premium', price: 'R$ 397', desc: 'Para grupos com mais de uma hospedagem, até 3 propriedades inclusas + R$ 79/mês por propriedade adicional', features: ['Tudo do plano Premium, em cada propriedade', 'Visão consolidada da rede', 'Gestão centralizada', 'Sem taxa de instalação'], cta: 'Falar sobre a Rede Premium', href: whatsappUrl('Olá! Tenho interesse no plano Rede Premium do ConciergeGo') },
+  { label: 'REDE PREMIUM', title: 'Rede Premium', price: 'R$ 397', desc: 'Para grupos com mais de uma hospedagem', priceRule: 'Até 3 propriedades inclusas + R$ 79/mês por propriedade adicional', features: ['Tudo do plano Premium, em cada propriedade', 'Visão consolidada da rede', 'Gestão centralizada', 'Sem taxa de instalação'], cta: 'Falar sobre a Rede Premium', href: whatsappUrl('Olá! Tenho interesse no plano Rede Premium do ConciergeGo') },
 ];
 
 function Plans() {
@@ -397,6 +397,7 @@ function Plans() {
                 <span className="cg-plan-label">{plan.label}</span>
                 <h3>{plan.title}</h3>
                 {plan.price && <p className="cg-plan-price">{plan.price}<small>/mês</small></p>}
+                {plan.priceRule && <p className="cg-plan-rule"><span aria-hidden="true">+</span>{plan.priceRule}</p>}
                 <p className="cg-plan-desc">{plan.desc}</p>
                 <ul className="cg-plan-features">
                   {plan.features.map((feature) => <li className="cg-plan-feature" key={feature}><Check /> {feature}</li>)}

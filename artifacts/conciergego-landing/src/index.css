@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
@@ -36,7 +36,7 @@
   --muted: 144 22% 89%;
   --muted-foreground: 153 8% 43%;
   --app-font-sans: 'DM Sans', sans-serif;
-  --app-font-serif: 'Fraunces', Georgia, serif;
+  --app-font-serif: 'DM Sans', sans-serif;
   --radius: 1rem;
 }
 
@@ -77,7 +77,8 @@
   font-size: .7rem; line-height: 1.2; letter-spacing: .16em; text-transform: uppercase;
   font-weight: 700;
 }
-.cg-serif { font-family: var(--app-font-serif); font-weight: 500; }
+.cg-serif { font-family: var(--app-font-sans); font-weight: 500; }
+.cg-page em { font-family: var(--app-font-sans); font-style: normal; }
 .cg-button {
   align-items: center; border: 1px solid transparent; border-radius: 999px; display: inline-flex;
   font-size: .86rem; font-weight: 700; gap: .7rem; justify-content: center; min-height: 48px;
@@ -111,8 +112,8 @@
 .cg-nav-links { align-items: center; display: flex; gap: 1.7rem; margin-left: auto; margin-right: 2rem; }
 .cg-nav-links a { color: rgba(245,241,232,.77); font-size: .8rem; transition: color .2s ease; }
 .cg-nav-links a:hover { color: #fff; }
-.cg-nav-actions { align-items: center; display: flex; gap: 1rem; }
-.cg-login { color: rgba(245,241,232,.8); font-size: .8rem; font-weight: 700; }
+.cg-nav-actions { align-items: center; display: flex; gap: 1.7rem; }
+.cg-login { color: rgba(245,241,232,.68); font-size: .8rem; font-weight: 500; }
 .cg-mobile-menu { background: none; border: 0; color: #f5f1e8; display: none; padding: .35rem; }
 
 .cg-hero { background: #1f4d3f; color: #f5f1e8; min-height: 740px; padding: 160px 0 96px; position: relative; }
@@ -142,11 +143,11 @@
 .cg-phone-screen { background: #f5f1e8; border-radius: 25px; color: #1a1a1a; min-height: 438px; padding: 33px 13px 14px; }
 .cg-phone-kicker { color: #718578; font-size: .58rem; font-weight: 700; letter-spacing: .04em; }
 .cg-phone h3 { color: #1f4d3f; font-size: 1.18rem; letter-spacing: -.04em; margin: .28rem 0 .9rem; }
-.cg-phone-cover { background: #dce8e1; border-radius: 13px; height: 72px; margin-bottom: .75rem; overflow: hidden; position: relative; }
+.cg-phone-cover { background: #dce8e1; border-radius: 13px; height: 86px; margin-bottom: .95rem; overflow: hidden; position: relative; }
 .cg-phone-cover:after { border: 2px solid #1f4d3f; border-radius: 50%; content: ''; height: 58px; position: absolute; right: 14px; top: 16px; width: 58px; }
 .cg-phone-cover:before { background: #e8a17e; border-radius: 50%; content: ''; height: 13px; position: absolute; right: 37px; top: 38px; width: 13px; z-index: 1; }
-.cg-phone-grid { display: grid; gap: 7px; grid-template-columns: repeat(2, 1fr); }
-.cg-phone-tile { background: #fff; border-radius: 10px; min-height: 70px; padding: 9px 8px; }
+.cg-phone-grid { display: grid; gap: 9px; grid-template-columns: repeat(2, 1fr); }
+.cg-phone-tile { background: #fff; border-radius: 10px; min-height: 78px; padding: 11px 10px; }
 .cg-phone-tile strong { color: #1f4d3f; display: block; font-size: .63rem; margin-top: .55rem; }
 .cg-phone-tile span { color: #718578; display: block; font-size: .52rem; margin-top: .15rem; }
 .cg-phone-icon { color: #1f4d3f; height: 19px; width: 19px; }
@@ -162,7 +163,7 @@
 .cg-section-head .cg-eyebrow { color: #7b8e80; margin-bottom: 1.4rem; }
 .cg-section-green .cg-section-head .cg-eyebrow, .cg-section-dark .cg-section-head .cg-eyebrow { color: #e8a17e; }
 .cg-section h2 { font-size: clamp(2.25rem, 4vw, 3.7rem); letter-spacing: -.065em; line-height: 1.03; margin: 0; }
-.cg-section h2 em { color: #e8a17e; font-family: var(--app-font-serif); font-style: normal; letter-spacing: -.04em; }
+.cg-section h2 em { color: #e8a17e; font-family: var(--app-font-sans); font-style: normal; letter-spacing: -.065em; }
 .cg-section-intro { color: #6b7568; font-size: 1rem; line-height: 1.7; margin: 1.25rem 0 0; max-width: 580px; }
 .cg-section-green .cg-section-intro, .cg-section-dark .cg-section-intro { color: #a9bbaf; }
 
@@ -216,12 +217,12 @@
 .cg-metric { color: #1f4d3f; font-size: 1.35rem; font-weight: 700; letter-spacing: -.06em; }
 .cg-metric small { color: #7b8e80; display: block; font-size: .62rem; font-weight: 500; letter-spacing: 0; margin-top: .2rem; }
 
-.cg-results { background: #f5f1e8; border-top: 1px solid #e3e5db; border-bottom: 1px solid #e3e5db; padding: 72px 0; }
+.cg-results { background: #dce8e1; border-top: 1px solid rgba(31,77,63,.1); border-bottom: 1px solid rgba(31,77,63,.1); padding: 72px 0; }
 .cg-results-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
 .cg-result { border-right: 1px solid #ccd5ca; padding: 0 2rem; }
 .cg-result:first-child { padding-left: 0; }
 .cg-result:last-child { border-right: 0; }
-.cg-result strong { color: #1f4d3f; display: block; font-family: var(--app-font-serif); font-size: clamp(2.8rem, 5vw, 4.4rem); font-weight: 500; letter-spacing: -.07em; line-height: 1; }
+.cg-result strong { color: #1f4d3f; display: block; font-family: var(--app-font-sans); font-size: clamp(2.8rem, 5vw, 4.4rem); font-weight: 600; letter-spacing: -.07em; line-height: 1; }
 .cg-result span { color: #6b7568; display: block; font-size: .85rem; margin-top: .6rem; }
 
 .cg-plans-head { align-items: end; display: flex; justify-content: space-between; }
@@ -233,9 +234,11 @@
 .cg-plan-label { color: #7b8e80; font-size: .68rem; font-weight: 700; letter-spacing: .13em; }
 .cg-plan.featured .cg-plan-label, .cg-plan.featured .cg-plan-desc, .cg-plan.featured .cg-plan-feature { color: #a9bbaf; }
 .cg-plan h3 { font-size: 1.45rem; letter-spacing: -.04em; margin: 1.1rem 0 .25rem; }
-.cg-plan-price { color: #1f4d3f; font-family: var(--app-font-serif); font-size: 2.25rem; letter-spacing: -.06em; margin: 0 0 .35rem; }
+.cg-plan-price { color: #1f4d3f; font-family: var(--app-font-sans); font-size: 2.25rem; font-weight: 600; letter-spacing: -.06em; margin: 0 0 .35rem; }
 .cg-plan.featured .cg-plan-price { color: #e8a17e; }
 .cg-plan-price small { color: #7b8e80; font-family: var(--app-font-sans); font-size: .7rem; letter-spacing: 0; }
+.cg-plan-rule { align-items: flex-start; background: #dce8e1; border-radius: 9px; color: #1f4d3f; display: flex; font-size: .72rem; font-weight: 700; gap: .4rem; line-height: 1.35; margin: .2rem 0 .65rem; padding: .55rem .6rem; }
+.cg-plan-rule span { align-items: center; background: #1f4d3f; border-radius: 50%; color: #f5f1e8; display: inline-flex; flex: 0 0 auto; font-size: .7rem; height: 15px; justify-content: center; margin-top: .05rem; width: 15px; }
 .cg-plan-desc { color: #6b7568; font-size: .79rem; line-height: 1.45; min-height: 45px; }
 .cg-plan-features { border-top: 1px solid #e3e5db; list-style: none; margin: 1.2rem 0 1.5rem; padding: 1rem 0 0; }
 .cg-plan.featured .cg-plan-features { border-top-color: rgba(245,241,232,.2); }
@@ -245,10 +248,10 @@
 .cg-plan .cg-button { margin-top: auto; width: 100%; }
 .cg-plan-note { color: #6b7568; font-size: .78rem; margin: 1.5rem 0 0; text-align: center; }
 
-.cg-about { align-items: center; display: grid; gap: 6rem; grid-template-columns: .8fr 1.2fr; }
-.cg-about-mark { align-items: center; background: #1f4d3f; border-radius: 50%; display: flex; height: 240px; justify-content: center; margin: 0 auto; position: relative; width: 240px; }
-.cg-about-mark:after { border: 1px solid rgba(232,161,126,.5); border-radius: 50%; content: ''; height: 278px; position: absolute; width: 278px; }
-.cg-about-mark img { height: 106px; width: 106px; }
+.cg-about { align-items: center; display: grid; gap: 3.5rem; grid-template-columns: minmax(280px, .95fr) minmax(0, 1.05fr); margin: 0 auto; max-width: 1080px; }
+.cg-about-mark { align-items: center; background: #1f4d3f; border-radius: 50%; display: flex; height: 280px; justify-content: center; margin: 0 auto; position: relative; width: 280px; }
+.cg-about-mark:after { border: 1px solid rgba(232,161,126,.5); border-radius: 50%; content: ''; height: 322px; position: absolute; width: 322px; }
+.cg-about-mark img { height: 128px; width: 128px; }
 .cg-about-copy { max-width: 650px; }
 .cg-about-copy p { color: #a9bbaf; font-size: 1.05rem; line-height: 1.75; margin: 1.5rem 0; }
 .cg-about-sign { border-top: 1px solid rgba(245,241,232,.2); color: #e8a17e; font-size: .78rem; padding-top: 1.1rem; }

@@ -1,0 +1,25 @@
+```
+AJUSTES DE DESIGN — Landing Page ConciergeGo
+
+Refinar a versão atual da landing page nos seguintes pontos, mantendo toda a estrutura de conteúdo e seções como estão:
+
+1. TIPOGRAFIA — padronizar
+Remover a fonte serif itálica que está aparecendo de forma inconsistente (em "nas mãos do hóspede", "Organizado para você", "Sem cartão de crédito" e nos números "30%"/"5★"). Usar apenas a fonte sans-serif definida no design system em toda a página, inclusive nesses destaques — nada de itálico serif.
+
+2. MOCKUP DO CELULAR NO HERO — simplificar
+Reduzir a quantidade de elementos visíveis dentro da tela do celular (hoje está com cardápio, passeios, SOS e mais itens espremidos). Manter só 3-4 elementos principais, com mais espaço em branco entre eles, replicando a limpeza da referência original (v1): saudação + 2 ou 3 atalhos de acesso rápido, sem sobrecarregar a tela.
+
+3. BARRA DE RESULTADOS (30% / +reservas / 5★) — dar identidade própria
+Separar essa barra de números da seção dos "3 passos" (hoje as duas estão juntas no mesmo fundo, sem transição clara). Colocar em uma faixa própria, com fundo levemente diferenciado (ex: verde-água claro, como usado na faixa de transição do meio da página) para marcar visualmente que é um bloco de resultado/prova, não uma continuação dos passos.
+
+4. CARD "REDE PREMIUM" — destacar a regra de preço
+A informação "até 3 propriedades inclusas + R$ 79/mês por propriedade adicional" está pequena e escondida na descrição corrida do card. Colocar essa regra em uma linha própria, mais visível, dentro do card — pode ser um texto menor logo abaixo do preço, em destaque (ex: badge ou linha com ícone), já que é o plano com a lógica de preço mais complexa.
+
+5. SEÇÃO INSTITUCIONAL (fundo escuro, "Tecnologia com olhar de hospitalidade") — reequilibrar composição
+Hoje o emblema circular fica pequeno à esquerda com muito espaço vazio ao redor, e o texto concentrado à direita. Reequilibrar: aumentar o emblema para ocupar mais a composição, ou centralizar o conjunto (emblema + texto) no bloco, eliminando o vazio excessivo à esquerda.
+
+6. HEADER — separar "Entrar" do CTA principal
+"Entrar" e "Quero conhecer" estão visualmente colados, competindo pela atenção. Aumentar o espaçamento entre os dois e reduzir o peso visual do "Entrar" (ex: manter só como link de texto simples, sem nenhum tipo de contorno/fundo), pra ficar claramente secundário em relação ao CTA principal.
+
+Não alterar conteúdo, textos, ordem de seções, links ou CTAs — só os ajustes visuais acima.
+```
